@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مسارات التعلم | ZoomIn Development</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Inter:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <a href="index.html" class="logo"><span class="logo-badge">⚡</span>Zoom<span class="z">In</span> Development</a>
+    <ul class="nav-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="learn.html" class="active">تعلّم</a></li>
+      <!-- <li><a href="course.html">المشاريع</a></li> -->
+      <li><a href="portfolio.html">الـPortfolio</a></li>
+      <li><a href="marketplace.html">السوق</a></li>
+      <li><a href="assistant.html">المساعد الذكي</a></li>
+    </ul>
+    <div class="nav-actions"></div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container" style="text-align:center">
+    <div class="kicker" style="color:var(--accent-dark);font-weight:900">LEARNING PATHS</div>
+    <h1 style="font-size:clamp(1.9rem,4vw,2.8rem);font-weight:900;margin:.4rem 0">مسارات التعلم 🎓</h1>
+    <p style="color:var(--muted);max-width:36rem;margin:0 auto">اختاري مسارك وابدئي خطوة بخطوة — تقدمك بيتسجل تلقائي في حسابك، وكل مسار بيخلص بمشروع حقيقي في الـPortfolio.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cards-grid" id="paths-grid">
+      <div class="empty-state" style="grid-column:1/-1"><b>جاري تحميل المسارات… ⏳</b>لو الرسالة دي مستمرة راجعي إعدادات Supabase</div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="container">
+    <div class="cta-band">
+      <h2>محتارة تبدئي بإيه؟ 🤔</h2>
+      <p>اسألي ZoomIn AI وهيقترحلك المسار الأنسب لهدفك</p>
+      <a href="assistant.html" class="btn btn-white">🤖 اسألي المساعد الذكي</a>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

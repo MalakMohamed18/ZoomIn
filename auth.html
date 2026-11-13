@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تسجيل الدخول | ZoomIn Development</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Inter:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <a href="index.html" class="logo"><span class="logo-badge">⚡</span>Zoom<span class="z">In</span> Development</a>
+    <ul class="nav-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="learn.html">تعلّم</a></li>
+      <!-- <li><a href="course.html">المشاريع</a></li> -->
+      <li><a href="marketplace.html">السوق</a></li>
+      <li><a href="assistant.html">المساعد الذكي</a></li>
+    </ul>
+    <div class="nav-actions"></div>
+  </div>
+</header>
+
+<section class="auth-section">
+  <div class="container">
+    <div class="auth-box" id="auth-box">
+      <div class="auth-brand">
+        <span class="logo-badge">⚡</span>
+        <h2>أهلاً بيك في ZoomIn 👋</h2>
+        <p>سجّلي دخولك أو أنشئي حساب جديد وابدئي رحلتك: تعلّم · ابنِ · بِع</p>
+      </div>
+
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-tab="login" type="button">تسجيل الدخول</button>
+        <button class="auth-tab" data-tab="register" type="button">إنشاء حساب جديد</button>
+      </div>
+
+      <form id="form-login" novalidate>
+        <div class="form-group">
+          <label for="login-email">📧 البريد الإلكتروني</label>
+          <input type="email" id="login-email" class="form-input" placeholder="you@example.com" autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="login-pass">🔒 كلمة السر</label>
+          <input type="password" id="login-pass" class="form-input" placeholder="••••••••" autocomplete="current-password">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="login-btn">دخول ←</button>
+      </form>
+
+      <form id="form-register" style="display:none" novalidate>
+        <div class="form-group">
+          <label for="reg-name">👤 الاسم الكامل</label>
+          <input type="text" id="reg-name" class="form-input" placeholder="مثال: محمد علاء" autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="reg-email">📧 البريد الإلكتروني</label>
+          <input type="email" id="reg-email" class="form-input" placeholder="you@example.com" autocomplete="email">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="reg-pass">🔒 كلمة السر</label>
+            <input type="password" id="reg-pass" class="form-input" placeholder="6 حروف على الأقل" autocomplete="new-password">
+          </div>
+          <div class="form-group">
+            <label for="reg-pass2">🔁 تأكيد كلمة السر</label>
+            <input type="password" id="reg-pass2" class="form-input" placeholder="نفس كلمة السر" autocomplete="new-password">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="register-btn">إنشاء الحساب 🚀</button>
+      </form>
+
+      <div id="auth-msg" class="auth-msg"></div>
+      <p class="auth-note">🔐 بياناتك محفوظة ومؤمّنة على Supabase</p>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

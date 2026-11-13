@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>البروفايل | ZoomIn Development</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Inter:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <a href="index.html" class="logo"><span class="logo-badge">⚡</span>Zoom<span class="z">In</span> Development</a>
+    <ul class="nav-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="learn.html">تعلّم</a></li>
+      <!-- <li><a href="course.html">المشاريع</a></li> -->
+      <li><a href="portfolio.html">الـPortfolio</a></li>
+      <li><a href="marketplace.html">السوق</a></li>
+      <li><a href="assistant.html">المساعد الذكي</a></li>
+    </ul>
+    <div class="nav-actions"></div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="pf-side" style="max-width:640px;margin:0 auto;text-align:center;padding:2.2rem">
+      <div class="avatar" id="pr-initial" style="width:110px;height:110px;font-size:2.4rem">؟</div>
+      <h2 id="pr-name" style="font-weight:900">…</h2>
+      <p id="pr-role" style="color:var(--muted)">ZoomIn Learner</p>
+      <div id="pr-skills" style="display:flex;gap:.4rem;justify-content:center;flex-wrap:wrap;margin:.8rem 0"></div>
+      <div style="display:flex;justify-content:center;gap:2rem;border-top:1px solid var(--line);padding-top:1.2rem;margin-top:.6rem">
+        <div><b style="color:var(--primary);font-size:1.4rem" id="pr-projects">0</b><br><small style="color:var(--muted)">Completed Paths</small></div>
+        <div><b style="color:var(--primary);font-size:1.4rem" id="pr-paths">0</b><br><small style="color:var(--muted)">Learning Paths</small></div>
+        <div><b style="color:var(--primary);font-size:1.4rem" id="pr-services">0</b><br><small style="color:var(--muted)">Services</small></div>
+      </div>
+      <div style="display:flex;gap:.7rem;justify-content:center;margin-top:1.4rem;flex-wrap:wrap">
+        <a href="portfolio.html" class="btn btn-primary">📁 View Portfolio</a>
+        <a href="marketplace.html" class="btn btn-ghost">💼 خدمتي في السوق</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">ACHIEVEMENTS</div>
+      <h2>إنجازات موثقة 🏆</h2>
+      <p style="color:var(--muted)">كل إنجاز هنا متوثق في قاعدة بيانات المنصة</p>
+    </div>
+    <div class="cards-grid" id="pr-achievements" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+      <div class="empty-state" style="grid-column:1/-1"><b>جاري التحميل… ⏳</b></div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

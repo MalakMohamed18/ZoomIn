@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سوق الخدمات | ZoomIn Development</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Inter:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <a href="index.html" class="logo"><span class="logo-badge">⚡</span>Zoom<span class="z">In</span> Development</a>
+    <ul class="nav-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="learn.html">تعلّم</a></li>
+      <!-- <li><a href="course.html">المشاريع</a></li> -->
+      <li><a href="portfolio.html">الـPortfolio</a></li>
+      <li><a href="marketplace.html" class="active">السوق</a></li>
+      <li><a href="assistant.html">المساعد الذكي</a></li>
+    </ul>
+    <div class="nav-actions"></div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container" style="text-align:center">
+    <div class="kicker" style="color:var(--accent-dark);font-weight:900">MARKETPLACE</div>
+    <h1 style="font-size:clamp(1.9rem,4vw,2.8rem);font-weight:900;margin:.4rem 0">سوق الخدمات 💼</h1>
+    <p style="color:var(--muted);max-width:34rem;margin:0 auto 1.8rem">Find Services — وصّلي بمتعلمين حولوا مهاراتهم لخدمات احترافية حقيقية</p>
+    <div class="search-box">🔎<input id="svc-search" type="text" placeholder="دوّري على أي خدمة…"></div>
+    <div class="filters">
+      <button class="filter active" data-cat="all">الكل</button>
+      <button class="filter" data-cat="design">Graphic Design</button>
+      <button class="filter" data-cat="marketing">Digital Marketing</button>
+      <button class="filter" data-cat="video">Video Editing</button>
+      <button class="filter" data-cat="web">Web Development</button>
+      <button class="filter" data-cat="writing">Content Writing</button>
+      <button class="filter" data-cat="ai">AI Services</button>
+      <button class="filter" data-cat="business">Business Services</button>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="container">
+    <div class="cards-grid" id="services-grid">
+      <div class="empty-state" style="grid-column:1/-1"><b>جاري تحميل الخدمات… ⏳</b></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta-band">
+      <h2>عندك مهارة؟ بِعيها هنا 💰</h2>
+      <p>Turn Your Skills Into Income — خدمتك بتظهر هنا فوراً بعد النشر</p>
+      <a href="sell.html" class="btn btn-white">🚀 Create Your First Service</a>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>داشبورد | ZoomIn Development</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Inter:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <a href="index.html" class="logo"><span class="logo-badge">⚡</span>Zoom<span class="z">In</span> Development</a>
+    <ul class="nav-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="learn.html">تعلّم</a></li>
+      <!-- <li><a href="course.html">المشاريع</a></li> -->
+      <li><a href="portfolio.html">الـPortfolio</a></li>
+      <li><a href="marketplace.html">السوق</a></li>
+      <li><a href="assistant.html">المساعد الذكي</a></li>
+    </ul>
+    <div class="nav-actions"></div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1 id="dash-hello" style="font-weight:900;font-size:clamp(1.8rem,4vw,2.4rem)">أهلاً بعودتك 👋</h1>
+    <p id="dash-sub" style="color:var(--muted)">كمّلي من مكان ما وقفتي — إنجازك بيكبر كل يوم</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="container">
+    <div class="dash-grid">
+      <div class="dash-card"><b id="stat-enrolled">–</b><span>🎓 مسارات بدأتيها</span></div>
+      <div class="dash-card"><b id="stat-completed">–</b><span>✅ مسارات مكتملة</span></div>
+      <div class="dash-card"><b id="stat-projects">–</b><span>📁 مشاريع في الـPortfolio</span></div>
+      <div class="dash-card"><b id="stat-services">–</b><span>💼 خدمات منشورة</span></div>
+    </div>
+    <div class="dash-2col">
+      <div class="panel">
+        <h3>📈 تقدمك في التعلم</h3>
+        <div id="progress-list"><div class="empty-state"><b>جاري التحميل… ⏳</b></div></div>
+        <h3 style="margin-top:1.6rem">▶️ أكمل التعلم</h3>
+        <div id="continue-list"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:1.4rem">
+        <div class="panel">
+          <h3>📦 مشاريعك</h3>
+          <div id="dash-projects"></div>
+          <a href="portfolio.html" class="btn btn-ghost btn-sm" style="margin-top:.8rem">افتحي الـPortfolio</a>
+        </div>
+        <div class="panel reco" id="dash-reco">
+          <h3>💡 مقترح ليك</h3>
+          <p style="color:var(--ink-2);font-weight:700">جاري التحليل…</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

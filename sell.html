@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بِع مهاراتك | ZoomIn Development</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Inter:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <a href="index.html" class="logo"><span class="logo-badge">⚡</span>Zoom<span class="z">In</span> Development</a>
+    <ul class="nav-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="learn.html">تعلّم</a></li>
+      <!-- <li><a href="course.html">المشاريع</a></li> -->
+      <li><a href="portfolio.html">الـPortfolio</a></li>
+      <li><a href="marketplace.html" class="active">السوق</a></li>
+      <li><a href="assistant.html">المساعد الذكي</a></li>
+    </ul>
+    <div class="nav-actions"></div>
+  </div>
+</header>
+
+<section class="page-hero sell-hero" style="border-bottom:none">
+  <div class="container" style="text-align:center">
+    <div class="kicker" style="color:var(--accent);font-weight:900">SELL YOUR SKILLS</div>
+    <h1 style="font-size:clamp(1.9rem,4vw,2.8rem);font-weight:900;margin:.4rem 0">حوّلي مهاراتك لدخل 💰</h1>
+    <p style="color:#94A3B8;max-width:34rem;margin:0 auto">Your skills can become real services — الخدمة بتاعتك هتظهر في السوق فوراً بعد النشر</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head"><div class="kicker">HOW TO START</div><h2>5 خطوات وتبدئي البيع</h2></div>
+    <div class="sell-steps">
+      <div class="sell-step"><div class="n">1</div><h3>اختاري مهارتك</h3><div class="en">Choose your skill</div></div>
+      <div class="sell-step"><div class="n">2</div><h3>أنشئي الخدمة</h3><div class="en">Create your service</div></div>
+      <div class="sell-step"><div class="n">3</div><h3>ضيفي الـPortfolio</h3><div class="en">Add your Portfolio</div></div>
+      <div class="sell-step"><div class="n">4</div><h3>انشري</h3><div class="en">Publish</div></div>
+      <div class="sell-step"><div class="n">5</div><h3>اكسبي عملاء</h3><div class="en">Get clients</div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="container">
+    <div class="dash-2col">
+      <div class="panel">
+        <h3>🚀 أنشئي خدمتك الجديدة</h3>
+        <form id="service-form" novalidate>
+          <div class="form-group">
+            <label for="svc-title">اسم الخدمة *</label>
+            <input id="svc-title" class="form-input" placeholder="مثال: Social Media Design">
+          </div>
+          <div class="form-group">
+            <label for="svc-desc">وصف الخدمة *</label>
+            <textarea id="svc-desc" class="form-input" rows="3" placeholder="اشرحي للعميل إيه اللي هيوصله بالظبط…"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="svc-cat">التصنيف *</label>
+            <select id="svc-cat" class="form-input">
+              <option value="design">Graphic Design</option>
+              <option value="marketing">Digital Marketing</option>
+              <option value="video">Video Editing</option>
+              <option value="web">Web Development</option>
+              <option value="writing">Content Writing</option>
+              <option value="ai">AI Services</option>
+              <option value="business">Business Services</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="svc-price">السعر (بالدولار) *</label>
+              <input id="svc-price" class="form-input" type="number" min="1" placeholder="10">
+            </div>
+            <div class="form-group">
+              <label for="svc-icon">أيقونة الخدمة</label>
+              <select id="svc-icon" class="form-input">
+                <option value="💼">💼</option><option value="🎨">🎨</option><option value="📱">📱</option>
+                <option value="💻">💻</option><option value="🎬">🎬</option><option value="✍️">✍️</option>
+                <option value="🤖">🤖</option><option value="🚀">🚀</option>
+              </select>
+            </div>
+          </div>
+          <div id="svc-msg" class="auth-msg"></div>
+          <button type="submit" class="btn btn-primary btn-block" id="svc-submit">نشر الخدمة في السوق 🚀</button>
+        </form>
+      </div>
+      <div class="panel reco">
+        <h3>💡 ليه العملاء بيثقوا في بائعي ZoomIn؟</h3>
+        <ul class="check-list">
+          <li>مهارات موثقة بمشاريع حقيقية مش شهادات بس</li>
+          <li>Portfolio معتمد من مراجعي المنصة</li>
+          <li>تقييمات وسُمعة موثوقة</li>
+          <li>دفع آمن وضمان استلام الشغل</li>
+        </ul>
+        <a href="learn.html" class="btn btn-ghost btn-sm" style="margin-top:1rem">🎓 لسه مش جاهزة؟ طوّري مهارتك الأول</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
